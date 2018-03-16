@@ -1,11 +1,14 @@
 doctype html
 html(lang="en")
-    meta(name='viewport',content="width=deviceWidth,initial-scale=1")
+    meta(name='http-equiv="X-UA-Compatible"',content="IE=edge,chrome=1")
     head
         title login
-        script(data-main="../js/lib/main",src="./js/lib/require.js")
+        link(rel="stylesheet", href="../css/login.css")
+        link(rel="stylesheet", href="../lib/bootstrap/css/bootstrap.min.css")
         script(type='text/javascript')
             -console.log('demo')
         body
             include template/header
             include template/footer
+            script(data-main="../js/lib/requirejs/main",src="../lib/requirejs/require.js")
+            
